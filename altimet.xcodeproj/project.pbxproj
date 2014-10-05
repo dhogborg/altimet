@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6306FB9C19E1B66C00A58720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6306FB3D19E1B66C00A58720 /* AppDelegate.swift */; };
+		6306FB9D19E1B66C00A58720 /* PressureChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6306FB3F19E1B66C00A58720 /* PressureChartView.swift */; };
+		6306FB9E19E1B66C00A58720 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6306FB4119E1B66C00A58720 /* ViewController.swift */; };
+		6306FBA019E1B66C00A58720 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6306FB4419E1B66C00A58720 /* LaunchScreen.xib */; };
+		6306FBA119E1B66C00A58720 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6306FB4519E1B66C00A58720 /* Main.storyboard */; };
+		6306FBA419E1B66C00A58720 /* JBBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6306FB4D19E1B66C00A58720 /* JBBarChartView.m */; };
+		6306FBA519E1B66C00A58720 /* JBChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6306FB4F19E1B66C00A58720 /* JBChartView.m */; };
+		6306FBA619E1B66C00A58720 /* JBLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6306FB5119E1B66C00A58720 /* JBLineChartView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6306FB3D19E1B66C00A58720 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6306FB3F19E1B66C00A58720 /* PressureChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PressureChartView.swift; sourceTree = "<group>"; };
+		6306FB4119E1B66C00A58720 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6306FB4319E1B66C00A58720 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6306FB4419E1B66C00A58720 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		6306FB4519E1B66C00A58720 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6306FB4C19E1B66C00A58720 /* JBBarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBBarChartView.h; sourceTree = "<group>"; };
+		6306FB4D19E1B66C00A58720 /* JBBarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBBarChartView.m; sourceTree = "<group>"; };
+		6306FB4E19E1B66C00A58720 /* JBChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBChartView.h; sourceTree = "<group>"; };
+		6306FB4F19E1B66C00A58720 /* JBChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBChartView.m; sourceTree = "<group>"; };
+		6306FB5019E1B66C00A58720 /* JBLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartView.h; sourceTree = "<group>"; };
+		6306FB5119E1B66C00A58720 /* JBLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartView.m; sourceTree = "<group>"; };
+		6306FBCE19E1B6B100A58720 /* altimet-Swift-Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "altimet-Swift-Bridge.h"; sourceTree = "<group>"; };
+		6348679119DFF9B200E7A9D8 /* altimet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = altimet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6348678E19DFF9B200E7A9D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6306FB3B19E1B66C00A58720 /* altimet */ = {
+			isa = PBXGroup;
+			children = (
+				6306FB4619E1B66C00A58720 /* vendors */,
+				6306FB3C19E1B66C00A58720 /* src */,
+				6306FB4219E1B66C00A58720 /* support */,
+			);
+			path = altimet;
+			sourceTree = "<group>";
+		};
+		6306FB3C19E1B66C00A58720 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				6306FB3D19E1B66C00A58720 /* AppDelegate.swift */,
+				6306FBCD19E1B69400A58720 /* Headers */,
+				6306FB3E19E1B66C00A58720 /* Classes */,
+				6306FB4019E1B66C00A58720 /* ViewControllers */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		6306FB3E19E1B66C00A58720 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6306FB3F19E1B66C00A58720 /* PressureChartView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6306FB4019E1B66C00A58720 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6306FB4119E1B66C00A58720 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6306FB4219E1B66C00A58720 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				6306FB4319E1B66C00A58720 /* Info.plist */,
+				6306FB4419E1B66C00A58720 /* LaunchScreen.xib */,
+				6306FB4519E1B66C00A58720 /* Main.storyboard */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
+		6306FB4619E1B66C00A58720 /* vendors */ = {
+			isa = PBXGroup;
+			children = (
+				6306FB4819E1B66C00A58720 /* JBChartView-master */,
+			);
+			path = vendors;
+			sourceTree = "<group>";
+		};
+		6306FB4819E1B66C00A58720 /* JBChartView-master */ = {
+			isa = PBXGroup;
+			children = (
+				6306FB4B19E1B66C00A58720 /* Classes */,
+			);
+			path = "JBChartView-master";
+			sourceTree = "<group>";
+		};
+		6306FB4B19E1B66C00A58720 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6306FB4C19E1B66C00A58720 /* JBBarChartView.h */,
+				6306FB4D19E1B66C00A58720 /* JBBarChartView.m */,
+				6306FB4E19E1B66C00A58720 /* JBChartView.h */,
+				6306FB4F19E1B66C00A58720 /* JBChartView.m */,
+				6306FB5019E1B66C00A58720 /* JBLineChartView.h */,
+				6306FB5119E1B66C00A58720 /* JBLineChartView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6306FBCD19E1B69400A58720 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				6306FBCE19E1B6B100A58720 /* altimet-Swift-Bridge.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		6348678819DFF9B200E7A9D8 = {
+			isa = PBXGroup;
+			children = (
+				6306FB3B19E1B66C00A58720 /* altimet */,
+				6348679219DFF9B200E7A9D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6348679219DFF9B200E7A9D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6348679119DFF9B200E7A9D8 /* altimet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6348679019DFF9B200E7A9D8 /* altimet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 634867B019DFF9B300E7A9D8 /* Build configuration list for PBXNativeTarget "altimet" */;
+			buildPhases = (
+				6348678D19DFF9B200E7A9D8 /* Sources */,
+				6348678E19DFF9B200E7A9D8 /* Frameworks */,
+				6348678F19DFF9B200E7A9D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = altimet;
+			productName = altimet;
+			productReference = 6348679119DFF9B200E7A9D8 /* altimet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6348678919DFF9B200E7A9D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Kampanjbolaget;
+				TargetAttributes = {
+					6348679019DFF9B200E7A9D8 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 6348678C19DFF9B200E7A9D8 /* Build configuration list for PBXProject "altimet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6348678819DFF9B200E7A9D8;
+			productRefGroup = 6348679219DFF9B200E7A9D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6348679019DFF9B200E7A9D8 /* altimet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6348678F19DFF9B200E7A9D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6306FBA119E1B66C00A58720 /* Main.storyboard in Resources */,
+				6306FBA019E1B66C00A58720 /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6348678D19DFF9B200E7A9D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6306FB9E19E1B66C00A58720 /* ViewController.swift in Sources */,
+				6306FBA519E1B66C00A58720 /* JBChartView.m in Sources */,
+				6306FBA619E1B66C00A58720 /* JBLineChartView.m in Sources */,
+				6306FBA419E1B66C00A58720 /* JBBarChartView.m in Sources */,
+				6306FB9D19E1B66C00A58720 /* PressureChartView.swift in Sources */,
+				6306FB9C19E1B66C00A58720 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		634867AE19DFF9B300E7A9D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		634867AF19DFF9B300E7A9D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		634867B119DFF9B300E7A9D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = altimet/support/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "altimet/src/Headers/altimet-Swift-Bridge.h";
+			};
+			name = Debug;
+		};
+		634867B219DFF9B300E7A9D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = altimet/support/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "altimet/src/Headers/altimet-Swift-Bridge.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6348678C19DFF9B200E7A9D8 /* Build configuration list for PBXProject "altimet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				634867AE19DFF9B300E7A9D8 /* Debug */,
+				634867AF19DFF9B300E7A9D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		634867B019DFF9B300E7A9D8 /* Build configuration list for PBXNativeTarget "altimet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				634867B119DFF9B300E7A9D8 /* Debug */,
+				634867B219DFF9B300E7A9D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6348678919DFF9B200E7A9D8 /* Project object */;
+}
