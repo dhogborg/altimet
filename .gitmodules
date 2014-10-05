@@ -1,0 +1,3 @@
+[submodule "altimet/vendors/JBChartView-master"]
+	path = altimet/vendors/JBChartView-master
+	url = https://github.com/Jawbone/JBChartView.git
