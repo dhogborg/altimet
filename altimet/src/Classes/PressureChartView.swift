@@ -36,7 +36,8 @@ class PressureChartView : UIView, JBLineChartViewDelegate, JBLineChartViewDataSo
     func setupChart() {
         
         self.chartView.setTranslatesAutoresizingMaskIntoConstraints(false)
-        
+        self.chartView.delegate = self
+        self.chartView.dataSource = self
         
         self.addSubview(self.chartView)
         
@@ -48,9 +49,6 @@ class PressureChartView : UIView, JBLineChartViewDelegate, JBLineChartViewDataSo
         
         self.addConstraints(hConst)
         self.addConstraints(vConst)
-        
-        self.chartView.delegate = self
-        self.chartView.dataSource = self
         
         
     }
@@ -77,8 +75,8 @@ class PressureChartView : UIView, JBLineChartViewDelegate, JBLineChartViewDataSo
     
     func lineChartView(lineChartView: JBLineChartView!, verticalValueForHorizontalIndex horizontalIndex: UInt, atLineIndex lineIndex: UInt) -> CGFloat {
         
-            let index = Int(horizontalIndex)
-            return CGFloat(self.timedData[index])
+        let index = Int(horizontalIndex)
+        return CGFloat(self.timedData[index])
             
     }
     

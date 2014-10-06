@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>04F671AA-6EBD-425A-8ECA-7B9BE32D1811</string>
+	<key>IDESourceControlProjectName</key>
+	<string>altimet</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8052081D9330B9E01E2E6C42563CD1BBE3C95C6A</key>
+		<string>https://github.com/dhogborg/altimet.git</string>
+		<key>A31C04743691FEA62971CC16ED36133B28095C3F</key>
+		<string>https://github.com/Jawbone/JBChartView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>altimet.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8052081D9330B9E01E2E6C42563CD1BBE3C95C6A</key>
+		<string>../..</string>
+		<key>A31C04743691FEA62971CC16ED36133B28095C3F</key>
+		<string>../..altimet/vendors/JBChartView-master/</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/dhogborg/altimet.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8052081D9330B9E01E2E6C42563CD1BBE3C95C6A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8052081D9330B9E01E2E6C42563CD1BBE3C95C6A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>altimet</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A31C04743691FEA62971CC16ED36133B28095C3F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JBChartView-master</string>
+		</dict>
+	</array>
+</dict>
+</plist>
