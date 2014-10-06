@@ -13,6 +13,9 @@ class PressureChartView : UIView, JBLineChartViewDelegate, JBLineChartViewDataSo
     
     
     lazy var chartView: JBChartView = JBLineChartView()
+    lazy var chartScaleTop: UILabel = UILabel()
+    lazy var chartScaleBottom: UILabel = UILabel()
+    
     var timedData: [Float] = []
     
     override init(frame: CGRect) {
@@ -20,12 +23,14 @@ class PressureChartView : UIView, JBLineChartViewDelegate, JBLineChartViewDataSo
         super.init(frame: frame)
         
         self.setupChart()
+        self.setupLabels()
         
     }
     
     override func awakeFromNib() {
         
         self.setupChart()
+        self.setupLabels()
         
     }
     
@@ -53,15 +58,80 @@ class PressureChartView : UIView, JBLineChartViewDelegate, JBLineChartViewDataSo
         
     }
     
+    func setupLabels() {
+
+        
+        self.chartScaleTop.text = "----.--- hPa"
+        self.chartScaleTop.font = UIFont.systemFontOfSize(13)
+        self.chartScaleTop.textColor = UIColor(white: 0.3, alpha: 1)
+        self.chartScaleTop.setTranslatesAutoresizingMaskIntoConstraints(false)
+        
+        self.chartScaleBottom.text = "----.--- hPa"
+        self.chartScaleBottom.font = UIFont.systemFontOfSize(13)
+        self.chartScaleBottom.textColor = UIColor(white: 0.3, alpha: 1)
+        self.chartScaleBottom.setTranslatesAutoresizingMaskIntoConstraints(false)
+        
+        self.addSubview(self.chartScaleTop)
+        self.addSubview(self.chartScaleBottom)
+        
+        
+        let views = [
+            "top": self.chartScaleTop,
+            "bottom": self.chartScaleBottom
+        ]
+        let c1 = NSLayoutConstraint.constraintsWithVisualFormat("H:|-0-[top(100)]",
+            options: nil, metrics: nil, views: views)
+        let c2 = NSLayoutConstraint.constraintsWithVisualFormat("V:|-0-[top(21)]",
+            options: nil, metrics: nil, views: views)
+        let c3 = NSLayoutConstraint.constraintsWithVisualFormat("H:|-0-[bottom(100)]",
+            options: nil, metrics: nil, views: views)
+        let c4 = NSLayoutConstraint.constraintsWithVisualFormat("V:[bottom(21)]-0-|",
+            options: nil, metrics: nil, views: views)
+        
+        self.addConstraints(c1 + c2 + c3 + c4)
+        
+    }
+    
     func addTimedDataPoint(#pressure: Float) {
+        
+        if (self.timedData.count == 0) {
+            
+            for i in 0...59 {
+                self.timedData.append(pressure)
+            }
+            
+        }
         
         self.timedData.append(pressure)
         
-        if self.timedData.count > 60 {
+        if self.timedData.count > 59 {
             self.timedData.removeAtIndex(0)
         }
         
         self.chartView.reloadData()
+        self.updateChartScale()
+        
+    }
+    
+    func updateChartScale() {
+        
+        var max = Float(Int.min)
+        var min = Float(Int.max)
+        
+        for dataPoint in self.timedData {
+            
+            if dataPoint > max {
+                max = dataPoint
+            }
+            
+            if dataPoint < min {
+                min = dataPoint
+            }
+
+        }
+
+        self.chartScaleTop.text = NSString(format: "%0.3f hPa", max * 10)
+        self.chartScaleBottom.text = NSString(format: "%0.3f hPa", min * 10)
         
     }
     

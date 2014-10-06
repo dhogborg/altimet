@@ -22,7 +22,7 @@
 		<key>8052081D9330B9E01E2E6C42563CD1BBE3C95C6A</key>
 		<string>../..</string>
 		<key>A31C04743691FEA62971CC16ED36133B28095C3F</key>
-		<string>../..altimet/vendors/JBChartView-master/</string>
+		<string>../..altimet/vendors/JBChartView-master</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/dhogborg/altimet.git</string>
