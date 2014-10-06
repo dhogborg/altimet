@@ -117,13 +117,6 @@ xcuserdata
 #
 # ...none. Everything is now explained.
 
-CNGFinder.xcodeproj/project.xcworkspace/*
-Server/data/data.json
-nbproject
-Server/resources/config.php
-
-Server/nbproject/private/private.properties
-
 # built application files
 *.apk
 *.ap_
