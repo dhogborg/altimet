@@ -63,12 +63,12 @@ class PressureChartView : UIView, JBLineChartViewDelegate, JBLineChartViewDataSo
         
         self.chartScaleTop.text = "----.--- hPa"
         self.chartScaleTop.font = UIFont.systemFontOfSize(13)
-        self.chartScaleTop.textColor = UIColor(white: 0.3, alpha: 1)
+        self.chartScaleTop.textColor = UIColor(white: 0.9, alpha: 1)
         self.chartScaleTop.setTranslatesAutoresizingMaskIntoConstraints(false)
         
         self.chartScaleBottom.text = "----.--- hPa"
         self.chartScaleBottom.font = UIFont.systemFontOfSize(13)
-        self.chartScaleBottom.textColor = UIColor(white: 0.3, alpha: 1)
+        self.chartScaleBottom.textColor = UIColor(white: 0.9, alpha: 1)
         self.chartScaleBottom.setTranslatesAutoresizingMaskIntoConstraints(false)
         
         self.addSubview(self.chartScaleTop)
@@ -158,5 +158,11 @@ class PressureChartView : UIView, JBLineChartViewDelegate, JBLineChartViewDataSo
         return 2.0
     }
     
+    func lineChartView(lineChartView: JBLineChartView!, colorForLineAtLineIndex lineIndex: UInt) -> UIColor! {
+        return UIColor(white: 1, alpha: 1)
+    }
     
+    func lineChartView(lineChartView: JBLineChartView!, selectionColorForLineAtLineIndex lineIndex: UInt) -> UIColor! {
+        return UIColor.clearColor()
+    }
 }

@@ -15,6 +15,16 @@
 		6306FBA419E1B66C00A58720 /* JBBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6306FB4D19E1B66C00A58720 /* JBBarChartView.m */; };
 		6306FBA519E1B66C00A58720 /* JBChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6306FB4F19E1B66C00A58720 /* JBChartView.m */; };
 		6306FBA619E1B66C00A58720 /* JBLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6306FB5119E1B66C00A58720 /* JBLineChartView.m */; };
+		63AB0BFA19E4373C0013542A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63AB0BF919E4373C0013542A /* Images.xcassets */; };
+		63AB0C0219E4407E0013542A /* symbol-max.png in Resources */ = {isa = PBXBuildFile; fileRef = 63AB0BFC19E4407E0013542A /* symbol-max.png */; };
+		63AB0C0319E4407E0013542A /* symbol-max@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63AB0BFD19E4407E0013542A /* symbol-max@2x.png */; };
+		63AB0C0419E4407E0013542A /* symbol-max@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63AB0BFE19E4407E0013542A /* symbol-max@3x.png */; };
+		63AB0C0519E4407E0013542A /* symbol-min.png in Resources */ = {isa = PBXBuildFile; fileRef = 63AB0BFF19E4407E0013542A /* symbol-min.png */; };
+		63AB0C0619E4407E0013542A /* symbol-min@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63AB0C0019E4407E0013542A /* symbol-min@2x.png */; };
+		63AB0C0719E4407E0013542A /* symbol-min@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63AB0C0119E4407E0013542A /* symbol-min@3x.png */; };
+		63AB0C0C19E444F40013542A /* symbol-delta@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63AB0C0919E444F40013542A /* symbol-delta@2x.png */; };
+		63AB0C0D19E444F40013542A /* symbol-delta@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63AB0C0A19E444F40013542A /* symbol-delta@3x.png */; };
+		63AB0C0F19E445690013542A /* symbol-delta.png in Resources */ = {isa = PBXBuildFile; fileRef = 63AB0C0E19E445690013542A /* symbol-delta.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +42,16 @@
 		6306FB5119E1B66C00A58720 /* JBLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartView.m; sourceTree = "<group>"; };
 		6306FBCE19E1B6B100A58720 /* altimet-Swift-Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "altimet-Swift-Bridge.h"; sourceTree = "<group>"; };
 		6348679119DFF9B200E7A9D8 /* altimet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = altimet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63AB0BF919E4373C0013542A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		63AB0BFC19E4407E0013542A /* symbol-max.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "symbol-max.png"; sourceTree = "<group>"; };
+		63AB0BFD19E4407E0013542A /* symbol-max@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "symbol-max@2x.png"; sourceTree = "<group>"; };
+		63AB0BFE19E4407E0013542A /* symbol-max@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "symbol-max@3x.png"; sourceTree = "<group>"; };
+		63AB0BFF19E4407E0013542A /* symbol-min.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "symbol-min.png"; sourceTree = "<group>"; };
+		63AB0C0019E4407E0013542A /* symbol-min@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "symbol-min@2x.png"; sourceTree = "<group>"; };
+		63AB0C0119E4407E0013542A /* symbol-min@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "symbol-min@3x.png"; sourceTree = "<group>"; };
+		63AB0C0919E444F40013542A /* symbol-delta@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "symbol-delta@2x.png"; sourceTree = "<group>"; };
+		63AB0C0A19E444F40013542A /* symbol-delta@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "symbol-delta@3x.png"; sourceTree = "<group>"; };
+		63AB0C0E19E445690013542A /* symbol-delta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "symbol-delta.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +68,7 @@
 		6306FB3B19E1B66C00A58720 /* altimet */ = {
 			isa = PBXGroup;
 			children = (
+				63AB0BF819E4372E0013542A /* resources */,
 				6306FB4619E1B66C00A58720 /* vendors */,
 				6306FB3C19E1B66C00A58720 /* src */,
 				6306FB4219E1B66C00A58720 /* support */,
@@ -145,6 +166,31 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		63AB0BF819E4372E0013542A /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				63AB0BFB19E4407E0013542A /* graphics */,
+				63AB0BF919E4373C0013542A /* Images.xcassets */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		63AB0BFB19E4407E0013542A /* graphics */ = {
+			isa = PBXGroup;
+			children = (
+				63AB0C0E19E445690013542A /* symbol-delta.png */,
+				63AB0C0919E444F40013542A /* symbol-delta@2x.png */,
+				63AB0C0A19E444F40013542A /* symbol-delta@3x.png */,
+				63AB0BFC19E4407E0013542A /* symbol-max.png */,
+				63AB0BFD19E4407E0013542A /* symbol-max@2x.png */,
+				63AB0BFE19E4407E0013542A /* symbol-max@3x.png */,
+				63AB0BFF19E4407E0013542A /* symbol-min.png */,
+				63AB0C0019E4407E0013542A /* symbol-min@2x.png */,
+				63AB0C0119E4407E0013542A /* symbol-min@3x.png */,
+			);
+			path = graphics;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -202,7 +248,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63AB0C0319E4407E0013542A /* symbol-max@2x.png in Resources */,
+				63AB0BFA19E4373C0013542A /* Images.xcassets in Resources */,
 				6306FBA119E1B66C00A58720 /* Main.storyboard in Resources */,
+				63AB0C0219E4407E0013542A /* symbol-max.png in Resources */,
+				63AB0C0419E4407E0013542A /* symbol-max@3x.png in Resources */,
+				63AB0C0C19E444F40013542A /* symbol-delta@2x.png in Resources */,
+				63AB0C0D19E444F40013542A /* symbol-delta@3x.png in Resources */,
+				63AB0C0719E4407E0013542A /* symbol-min@3x.png in Resources */,
+				63AB0C0619E4407E0013542A /* symbol-min@2x.png in Resources */,
+				63AB0C0519E4407E0013542A /* symbol-min.png in Resources */,
+				63AB0C0F19E445690013542A /* symbol-delta.png in Resources */,
 				6306FBA019E1B66C00A58720 /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

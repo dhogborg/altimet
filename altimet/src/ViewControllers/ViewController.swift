@@ -19,10 +19,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var maxPressureLabel: UILabel!
     @IBOutlet weak var minPressureLabel: UILabel!
+    @IBOutlet weak var deltaPressureLabel: UILabel!
+    
+    
     @IBOutlet weak var maxAltLabel: UILabel!
     @IBOutlet weak var minAltLabel: UILabel!
+    @IBOutlet weak var deltaAltLabel: UILabel!
+    
     @IBOutlet weak var signalView: UIView!
     @IBOutlet weak var chartView: PressureChartView!
+    @IBOutlet weak var statsView: UIView!
     
     // altitude offset in meter, enables reset feature
     var offset: Float = 0.0
@@ -69,6 +75,8 @@ class ViewController: UIViewController {
     // constraints that will be affected by a rotation change
     @IBOutlet weak private var chartViewBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak private var chartViewTopConstraint: NSLayoutConstraint!
+
+
     
     override func willRotateToInterfaceOrientation(toInterfaceOrientation: UIInterfaceOrientation, duration: NSTimeInterval) {
         
@@ -80,6 +88,8 @@ class ViewController: UIViewController {
         // 389 or 10
         self.chartViewTopConstraint.constant = (ui.isLandscape) ? 10 : 389
         
+        self.statsView.hidden = (ui.isLandscape)
+
         
         
         UIView.animateWithDuration(duration, animations: { () -> Void in
@@ -133,7 +143,7 @@ class ViewController: UIViewController {
     func updateViewWithNewAlt(#meter :Float) {
         
         let newAlt = meter - self.offset
-        self.meterLabel.text = NSString(format: "%0.3f m", newAlt)
+        self.meterLabel.text = NSString(format: "%0.2f m", newAlt)
         
         if newAlt > self.maxAlt {
             self.maxAlt = newAlt
@@ -145,9 +155,12 @@ class ViewController: UIViewController {
             self.flashSignalWith(color: UIColor.redColor())
         }
         
-        self.maxAltLabel.text = NSString(format: "%0.3f m", self.maxAlt)
-        self.minAltLabel.text = NSString(format: "%0.3f m", self.minAlt)
-
+        let delta = self.maxAlt - self.minAlt
+        
+        self.maxAltLabel.text = NSString(format: "%0.2f m", self.maxAlt)
+        self.minAltLabel.text = NSString(format: "%0.2f m", self.minAlt)
+        self.deltaAltLabel.text = NSString(format: "%0.2f m", delta)
+        
     }
     
     func updateViewWithNewPressure(#kPa :Float) {
@@ -164,8 +177,11 @@ class ViewController: UIViewController {
             self.minPressure = hPa
         }
         
+        let delta = self.maxPressure - self.minPressure
+        
         self.maxPressureLabel.text = NSString(format: "%0.3f hPa", self.maxPressure)
         self.minPressureLabel.text = NSString(format: "%0.3f hPa", self.minPressure)
+        self.deltaPressureLabel.text = NSString(format: "%0.3f hPa", delta)
         
     }
     
